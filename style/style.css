@@ -1,0 +1,121 @@
+/*
+Il CSS è un formato in cui vengono definiti gli stili
+la codifica è la seguente
+
+selettore {
+    nome-regola-1: valore-regola-1;
+    nome-regola-2: valore-regola-2;
+    ...
+}
+
+Il SELETTORE indica uno o più elementi HTML all'interno
+della pagina in cui il foglio di stile CSS sarà linkato.
+
+Il selettore può assumere diverse forme a seconda degli
+elementi che si vogliono "selezionare".
+
+Ad esempio: con il punto (.) si indica il nome di una classe:
+
+HTML:
+<div class="bottone-colorato">click me</div>
+
+CSS:
+.bottone-colorato {
+    regola-1: val-1;
+    ...
+}
+
+Esempio 2: con il cancelletto, si seleziona l'elemento con quel determinato id
+
+HTML:
+<p id="importante">...</p>
+
+CSS:
+#importante{
+    font-size: 30px;
+    ...
+}
+
+*/
+
+.quadrato-nero {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+
+.cerchio-blu {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: blue;
+}
+
+/*
+Se invece utilizzo il nome di un tag HTML come selettore, tutti gli elementi 
+appartenenti a quel tag saranno impattati
+*/
+
+div {
+    margin: 15px;
+}
+
+/*
+Una piccola chicca: passare con il mouse sopra un elemento
+*/
+
+#pseudo-bottone{
+    border: 2px solid #ccf6a0;
+    width: 80px;
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+
+    /*
+    c'è una proprietà speciale che permette di aggiungere
+    transizioni quando le proprietà cambiano
+    */
+
+    transition: all 0.3s linear;
+
+}
+
+/*
+In CSS, è possibile definire un comportamento diverso quando
+il cursore viene spostato sull'elemento.
+*/
+
+#pseudo-bottone:hover{
+    background-color: #ccf6a0;
+    color: white;
+}
+
+pseudo-bottone2{
+    border: 2px solid #ccf6a0;
+    width: 80px;
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+
+    /*
+    c'è una proprietà speciale che permette di aggiungere
+    transizioni quando le proprietà cambiano
+    */
+
+    transition: all 0.3s linear;
+
+}
+
+
+
+#pseudo-bottone2:hover{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ccf6a0;
+    color: white;
+}
+   
